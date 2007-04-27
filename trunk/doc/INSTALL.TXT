@@ -1,0 +1,54 @@
+INSTALL.TXT
+	CITEP Bar Code System Version 0.5 (Revision 1) Install Instructions
+	
+	Requirements:
+		A Linux or Unix (i.e. FreeBSD...) Machine
+			This is required for the server machine
+			http://www.gentoo.org
+			http://www.ubuntu.com
+			http://www.suse.org
+			http://www.freebsd.org
+			... etc. ...
+			
+		Python 2.4.3 or higher
+			www.python.org
+			
+		Python Imaging Library (PIL) 1.1.5 or higher
+			http://www.pythonware.com/products/pil/
+			
+		MySQL 4.1.21 or 5.0.18 or higher
+			http://www.mysql.org
+		
+		MySQL-Python 1.2.1_p2 or higher
+			http://sourceforge.net/projects/mysql-python
+		
+		A Web Browser (Internet Explorer is NOT recommended)
+			This is required for the client
+			http://www.mozilla.com/firefox/
+			http://www.opera.com/
+			... etc. ...
+			
+	Install Instructions:
+		INCOMPLETE!
+		
+		Gunzip and untar the tarball into the desired directory
+			gunzip <file>.tar.gz
+			tar -xvf <file>.tar
+		
+		Change directory into the <file> directory
+			cd <file>
+		
+		Run the installer
+			./install.py
+			
+	To Run The CITEP Bar Code Project:
+		INCOMPLETE
+		
+		Run the server:
+			Option 1: only viewable on the server machine
+				./httpserv.py
+			Option 2: viewable from any client machine
+				./httpserv.py -a <ip address>
+				
+		Stop the server:
+			press the "Ctrl" and "C" keys on the server machine.

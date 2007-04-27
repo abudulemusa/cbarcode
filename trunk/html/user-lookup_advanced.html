@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<HTML>
+<HEAD>
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW, NOSNIPPET">
+<TITLE>Advanced User Lookup</TITLE>
+</HEAD>
+<BODY>
+<h1>Advanced User Lookup</h1>
+
+<FORM METHOD = post ACTION = "/cgi-bin/user-lookup-advanced.cgi">
+<p>Please enter as much information as possible.</p>
+
+<table border="1" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF" width="484">
+	<tr>
+    		<td width="389" colspan="2" bgcolor="#808080">
+    		<font color="#FFFFFF"><b>&nbsp;User ID Number:</b></font></td>
+	</tr>
+
+		<tr>
+    			<td width="266" bgcolor="#CCCCCC"><font face="Verdana" size="2">&nbsp;&nbsp; 
+    			User ID:</td>
+    			<td width="215" bgcolor="#CCCCCC">
+    			<input type="text" name="skew" size="30" maxlength="40"></td>
+		</tr>
+	<tr>
+    		<td width="389" colspan="2" bgcolor="#808080">
+    		<font color="#FFFFFF"><b>&nbsp;Personal Information:</b></font></td>
+	</tr>
+<!-- Incomplete! -->
+		<tr>
+    			<td width="266" bgcolor="#CCCCCC"><font face="Verdana" size="2">&nbsp;&nbsp; 
+    			Prefix:</td>
+    			<td width="215" bgcolor="#CCCCCC">
+    			<input type="text" name="prefix" size="30" maxlength="40"></td>
+		</tr>
+<!-- /Incomplete! -->
+		<tr>
+    			<td width="266" bgcolor="#CCCCCC"><font face="Verdana" size="2">&nbsp;&nbsp; 
+    			First Name:</td>
+    			<td width="215" bgcolor="#CCCCCC">
+    			<input type="text" name="f_name" size="30" maxlength="40"></td>
+		</tr>
+		<tr>
+    			<td width="266" bgcolor="#CCCCCC"><font face="Verdana" size="2">&nbsp;&nbsp; 
+    			Middle Name:</td>
+    			<td width="215" bgcolor="#CCCCCC">
+    			<input type="text" name="m_name" size="30" maxlength="40"></td>
+		</tr>
+		<tr>
+    			<td width="266" bgcolor="#CCCCCC"><font face="Verdana" size="2">&nbsp;&nbsp; 
+    			Last Name:</td>
+    			<td width="215" bgcolor="#CCCCCC">
+    			<input type="text" name="l_name" size="30" maxlength="40"></td>
+		</tr>
+<!-- Incomplete! -->
+		<tr>
+    			<td width="266" bgcolor="#CCCCCC"><font face="Verdana" size="2">&nbsp;&nbsp; 
+    			Suffix:</td>
+    			<td width="215" bgcolor="#CCCCCC">
+    			<input type="text" name="suffix" size="30" maxlength="40"></td>
+		</tr>
+<!-- /Incomplete! -->
+	<tr>
+    		<td width="389" colspan="2" bgcolor="#808080">
+    		<b>
+    		<font face="Verdana" size="2" color="#FFFFFF">&nbsp;</font></b><b><font face="Verdana" size="2" color="#FFFFFF">Contact Information: </font>
+    		</b>
+		</td>
+	</tr>
+		<tr>
+    			<td width="266" bgcolor="#CCCCCC"><font face="Verdana" size="2">&nbsp;&nbsp;
+			Home Phone Number:</font></td>
+    			<td width="215" bgcolor="#CCCCCC"><font face="Verdana">
+    			<input type="text" name="h_ph" size="30" maxlength="25"></font></td>
+		</tr>
+		<tr>
+    			<td width="266" bgcolor="#CCCCCC"><font face="Verdana" size="2">&nbsp;&nbsp;
+			Cell Phone Number:</font></td>
+    			<td width="215" bgcolor="#CCCCCC"><font face="Verdana">
+    			<input type="text" name="c_ph" size="30" maxlength="25"></font></td>
+		</tr>
+		<tr>
+    			<td width="266" bgcolor="#CCCCCC"><font face="Verdana" size="2">&nbsp;&nbsp;
+			Work Phone Number:</font></td>
+    			<td width="215" bgcolor="#CCCCCC"><font face="Verdana">
+    			<input type="text" name="w_ph" size="30" maxlength="25"></font></td>
+		</tr>
+		<tr>
+    			<td width="266" bgcolor="#CCCCCC"><font face="Verdana" size="2">&nbsp;&nbsp; E-Mail 
+    			Address:</font></td>
+    			<td width="215" bgcolor="#CCCCCC"><font face="Verdana">
+    			<input type="text" name="email" size="30" maxlength="40"></font></td>
+		</tr>
+<!-- Incomplete! -->
+		<tr>
+    			<td width="266" bgcolor="#CCCCCC"><font face="Verdana" size="2">&nbsp;&nbsp;  Address:</font></td>
+    			<td width="215" bgcolor="#CCCCCC">
+    			<input type="text" name="address" size="30"></td>
+		</tr>
+<!-- /Incomplete -->
+		<tr>
+    			<td width="266" bgcolor="#CCCCCC"><font face="Verdana" size="2">&nbsp;&nbsp; 
+    			Status:</td>
+    			<td width="215" bgcolor="#CCCCCC">
+    			<select name="status">
+    				<option> Any
+    				<option> Active
+    				<option> Suspended
+    				<option> Expired
+    			</select>
+    			</td>
+		</tr>
+	<tr>
+    		<td width="389" colspan="2" bgcolor="#808080" align="center">
+    		<INPUT TYPE = submit VALUE = "Submit">
+		<INPUT TYPE = reset VALUE = "Reset">
+		</td>
+	</tr>
+</table>
+
+</FORM>
+<a href="user-lookup.html">Basic User Lookup</a>
+</BODY>
+</HTML>

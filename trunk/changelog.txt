@@ -1,0 +1,10 @@
+CHANGES FROM v 0.5 SPEC:
+
+*	Table Items:
+		Desc changed to Description, no nulls accepted.
+		
+*	Table Transactions:
+		Added Class("T") as part of primary key.
+		Changed TID to 8 digits
+
+*	The httpserv.py script will only run on Unix or Windows.

@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<HTML>
+<HEAD>
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW, NOSNIPPET">
+<TITLE>Create New Transaction</TITLE>
+</HEAD>
+<BODY>
+<h1>Advanced Transactioin Lookup</h1>
+
+<FORM METHOD = post ACTION = "/cgi-bin/transaction-lookup-advanced.cgi">
+<p>
+	Please enter as much information as possible.
+</p>
+<table border="1" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF" width="484">
+	<tr>
+    		<td width="389" colspan="2" bgcolor="#808080">
+    		<font color="#FFFFFF"><b>Transaction ID Number</b></font></td>
+	</tr>
+		<tr>
+    			<td width="266" bgcolor="#CCCCCC"><font face="Verdana" size="2">&nbsp;&nbsp; 
+    			Transaction ID Number:</td>
+    			<td width="215" bgcolor="#CCCCCC">
+    			<input type="text" name="skew" size="30" maxlength="40"></td>
+		</tr>
+	
+	<tr>
+    		<td width="389" colspan="2" bgcolor="#808080">
+    		<font color="#FFFFFF"><b>&nbsp;Transactional Information:</b></font></td>
+	</tr>
+		<tr>
+    			<td width="266" bgcolor="#CCCCCC"><font face="Verdana" size="2">&nbsp;&nbsp; 
+    			User ID:</td>
+    			<td width="215" bgcolor="#CCCCCC">
+    			<textarea name="user" cols=30 rows=1></textarea>
+    			</td>
+		</tr>
+		<tr>
+    			<td width="266" bgcolor="#CCCCCC"><font face="Verdana" size="2">&nbsp;&nbsp; 
+    			Items:</td>
+    			<td width="215" bgcolor="#CCCCCC">
+    			<textarea name="items" cols=30 rows=3></textarea>
+    			</td>
+		</tr>
+	<tr>
+    		<td width="389" colspan="2" bgcolor="#808080" align="center">
+    		<INPUT TYPE = submit VALUE = "Submit">
+		<INPUT TYPE = reset VALUE = "Reset">
+		</td>
+	</tr>
+</table>
+
+</FORM>
+</BODY>
+</HTML>
