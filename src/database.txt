@@ -1,0 +1,106 @@
+-- MySQL dump 10.10
+--
+-- Host: localhost    Database: barcode
+-- ------------------------------------------------------
+-- Server version	5.0.18-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `Items`
+--
+
+DROP TABLE IF EXISTS `Items`;
+CREATE TABLE `Items` (
+  `Class` set('I','S') NOT NULL,
+  `IID` bigint(8) unsigned zerofill NOT NULL auto_increment,
+  `Description` text,
+  `Owner` text,
+  `Status` set('Active','Inactive','Expired') NOT NULL default 'Active',
+  PRIMARY KEY  (`Class`,`IID`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `Items`
+--
+
+
+/*!40000 ALTER TABLE `Items` DISABLE KEYS */;
+LOCK TABLES `Items` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `Items` ENABLE KEYS */;
+
+--
+-- Table structure for table `Transactions`
+--
+
+DROP TABLE IF EXISTS `Transactions`;
+CREATE TABLE `Transactions` (
+  `TID` bigint(9) unsigned zerofill NOT NULL auto_increment,
+  `Date` datetime NOT NULL default '0000-00-00 00:00:00',
+  `UID` bigint(9) unsigned zerofill NOT NULL,
+  `Items` text NOT NULL,
+  PRIMARY KEY  (`TID`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `Transactions`
+--
+
+
+/*!40000 ALTER TABLE `Transactions` DISABLE KEYS */;
+LOCK TABLES `Transactions` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `Transactions` ENABLE KEYS */;
+
+--
+-- Table structure for table `Users`
+--
+
+DROP TABLE IF EXISTS `Users`;
+CREATE TABLE `Users` (
+  `UID` bigint(9) unsigned zerofill NOT NULL auto_increment,
+  `Prefix` text,
+  `F_Name` text NOT NULL,
+  `M_Name` text,
+  `L_Name` text NOT NULL,
+  `Postfix` text,
+  `H_PH` text,
+  `C_PH` text,
+  `W_PH` text,
+  `Email` text,
+  `Address` text,
+  `Modify` datetime NOT NULL default '0000-00-00 00:00:00',
+  `Expire` datetime NOT NULL default '0000-00-00 00:00:00',
+  `Status` set('Active','Expired','Suspended','Deleted') NOT NULL default 'Active',
+  PRIMARY KEY  (`UID`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `Users`
+--
+
+
+/*!40000 ALTER TABLE `Users` DISABLE KEYS */;
+LOCK TABLES `Users` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `Users` ENABLE KEYS */;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
